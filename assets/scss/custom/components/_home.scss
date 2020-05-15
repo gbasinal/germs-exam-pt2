@@ -3,6 +3,14 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+        @media only screen and (max-width: 1024px){
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 991px){
+            font-size: 12px;
+        }
         .product-image-container{
             width: 50%;
             padding-right: em(40);
@@ -19,9 +27,16 @@
         .product-text-container{
             width: 50%;
             max-width: em(530);
+            margin-bottom: em(75);
+            .product-header {
+                margin-bottom: em(70);
+            }
             .product-content {
                 max-width: em(507);
                 width: 100%;
+                h3 {
+                    margin-bottom: em(15);
+                }
             }
         }
     }
