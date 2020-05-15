@@ -394,6 +394,34 @@ h3 {
     page-break-after: avoid;
   }
 }
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/Agenda-Bold.eot");
+  src: url("../fonts/Agenda-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Agenda-Bold.woff2") format("woff2"), url("../fonts/Agenda-Bold.ttf") format("truetype"), url("../fonts/Agenda-Bold.svg#Agenda-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/Agenda-MediumCondensed.eot");
+  src: url("../fonts/Agenda-MediumCondensed.eot?#iefix") format("embedded-opentype"), url("../fonts/Agenda-MediumCondensed.woff2") format("woff2"), url("../fonts/Agenda-MediumCondensed.ttf") format("truetype"), url("../fonts/Agenda-MediumCondensed.svg#Agenda-MediumCondensed") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/Agenda-Black.eot");
+  src: url("../fonts/Agenda-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Agenda-Black.woff2") format("woff2"), url("../fonts/Agenda-Black.ttf") format("truetype"), url("../fonts/Agenda-Black.svg#Agenda-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/Agenda-Light.eot");
+  src: url("../fonts/Agenda-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Agenda-Light.woff2") format("woff2"), url("../fonts/Agenda-Light.ttf") format("truetype"), url("../fonts/Agenda-Light.svg#Agenda-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
 b, strong {
   font-weight: bold;
 }
