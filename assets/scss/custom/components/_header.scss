@@ -1,2 +1,48 @@
-header{}
+header {
+    position: fixed;
+    right: 0;
+    .nav-header-container {
+        .nav-header-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: em(120);
+            padding-top: em(18);
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    position: relative;
+                    max-width: em(165);
+                    padding-left: em(14);
+                    padding-right: em(50);
 
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        background-color: #666666;
+                        width: 2px;
+                        right: 0;
+                        bottom: 0;
+                        top: 0;
+                        position: absolute;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    a {
+
+                        &:last-child {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

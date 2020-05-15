@@ -1,9 +1,31 @@
-body {}
-
-b, strong {
-    font-weight:bold;
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
-* {
-    outline: none !important;
+body {
+    font-size: 1.406vw;
+    background-color: #000;
+    margin: 0;
+    @media only screen and (max-width: 1024px){
+        font-size: 18px;
+    }
+}
+
+p , a , li {
+    font-size: em(18);
+    color: #fff;
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+}
+
+.animated {
+    .animated-child {
+        opacity: 0;
+        transform : translateY(-15px)
+    }
 }
