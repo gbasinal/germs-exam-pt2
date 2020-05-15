@@ -813,10 +813,10 @@ a:active, a:hover {
 }
 
 header .nav-header-container {
-  position: expression(fixed);
   position: fixed;
   right: 0;
   height: 7.2777777778em;
+  top: 0;
 }
 @media only screen and (max-width: 991px) {
   header .nav-header-container {
@@ -937,9 +937,21 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper {
+    flex-direction: column;
+  }
+}
 .section--home-container .home-wrapper .product-image-container {
   width: 50%;
   padding-right: 2.2222222222em;
+}
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper .product-image-container {
+    width: 100%;
+    padding-right: 0;
+    font-size: 10px;
+  }
 }
 .section--home-container .home-wrapper .product-image-container .product-image-wrapper .product-bgStyle {
   background-size: cover;
@@ -949,17 +961,40 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   height: 26.2777777778em;
   margin-left: auto;
 }
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper .product-image-container .product-image-wrapper .product-bgStyle {
+    margin: 0 auto;
+  }
+}
 .section--home-container .home-wrapper .product-text-container {
   width: 50%;
   max-width: 29.4444444444em;
   margin-bottom: 4.1666666667em;
 }
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper .product-text-container {
+    width: 100%;
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
 .section--home-container .home-wrapper .product-text-container .product-header {
   margin-bottom: 3.8888888889em;
+}
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper .product-text-container .product-header {
+    font-size: 14px;
+  }
 }
 .section--home-container .home-wrapper .product-text-container .product-content {
   max-width: 28.1666666667em;
   width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .section--home-container .home-wrapper .product-text-container .product-content {
+    max-width: 100%;
+  }
 }
 .section--home-container .home-wrapper .product-text-container .product-content h3 {
   margin-bottom: 0.8333333333em;
@@ -999,5 +1034,10 @@ ul, ol {
 
 .section {
   padding: 0 1.3888888889em;
+}
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 0 0.8333333333em;
+  }
 }
 /*# sourceMappingURL=build.css.map */

@@ -36,4 +36,7 @@ main {
 
 .section {
     padding: 0 em(25);
+    @media only screen and (max-width: 767px){
+        padding: 0 em(15);
+    }
 }
