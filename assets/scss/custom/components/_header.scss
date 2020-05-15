@@ -42,6 +42,9 @@ header {
                         padding: em(25) 0;
                         max-width: 100%;
                     }
+                    @media only screen and (max-width: 767px){
+                        padding: em(15) 0;
+                    }
                     &:after {
                         content: "";
                         display: inline-block;
@@ -66,6 +69,21 @@ header {
 
                         &:last-child {
 
+                        }
+                    }
+                }
+            }
+            .menu-btn-container {
+                position: absolute;
+                display: none;
+                @media only screen and (max-width: 991px){
+                    display: block;
+                }
+                .hamburger {
+                    .hamburger-inner {
+                        background-color: $white;
+                        &:before, &:after {
+                            background-color: $white;
                         }
                     }
                 }
