@@ -18,7 +18,7 @@
         var flag = false;
         $(".hamburger").on("click", function(){
             $(this).toggleClass("is-active");
-
+            $("body, html").css("overflow", "hidden")
             if (!flag) {
                 tl.to(menuContainer, 0 , {display: "flex"})
                 .to(menuContainer, .3, {opacity: 1})
