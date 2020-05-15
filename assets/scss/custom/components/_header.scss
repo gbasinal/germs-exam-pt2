@@ -1,24 +1,47 @@
 header {
     position: fixed;
     right: 0;
+    @media only screen and (max-width: 991px){
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
     .nav-header-container {
+        @media only screen and (max-width: 991px){
+            height: 100%;
+        }
         .nav-header-wrapper {
             width: 100%;
             display: flex;
             justify-content: flex-end;
             padding-right: em(120);
             padding-top: em(18);
+            @media only screen and (max-width: 991px){
+                padding: em(15);
+                height: 100%;
+                background-color: $dblue;
+            }
             ul {
                 display: flex;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
+                @media only screen and (max-width: 991px){
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: em(24);
+                }
                 li {
                     position: relative;
                     max-width: em(165);
                     padding-left: em(14);
                     padding-right: em(50);
-
+                    @media only screen and (max-width: 991px){
+                        padding: em(25) 0;
+                        max-width: 100%;
+                    }
                     &:after {
                         content: "";
                         display: inline-block;
@@ -28,6 +51,9 @@ header {
                         bottom: 0;
                         top: 0;
                         position: absolute;
+                        @media only screen and (max-width: 991px){
+                            display: none;
+                        }
                     }
                     &:last-child {
                         padding-right: 0;
@@ -35,6 +61,7 @@ header {
                             display: none;
                         }
                     }
+
                     a {
 
                         &:last-child {
