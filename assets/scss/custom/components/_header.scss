@@ -1,14 +1,15 @@
 header {
-    position: fixed;
-    right: 0;
-    @media only screen and (max-width: 991px){
-        width: 100%;
-        height: 100%;
-        left: 0;
-    }
+
+
     .nav-header-container {
+        position: fixed;
+        right: 0;
+        height: em(131);
+        top: 0;
         @media only screen and (max-width: 991px){
+            width: 100%;
             height: 100%;
+            left: 0;
         }
         .nav-header-wrapper {
             width: 100%;

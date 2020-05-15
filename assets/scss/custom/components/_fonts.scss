@@ -63,6 +63,10 @@
 
 
 //// Default Typography
+h1, h2, h3, a, p ,li {
+    margin: 0;
+}
+
 
 h1 {
     @include textStyle($white, 50, 0, 50, 900);
