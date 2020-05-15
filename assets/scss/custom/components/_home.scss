@@ -1,0 +1,28 @@
+.section--home-container {
+    .home-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .product-image-container{
+            width: 50%;
+            padding-right: em(40);
+            .product-image-wrapper {
+                .product-bgStyle {
+                    @include bgSettings(cover, no-repeat, center);
+                    width: em(501);
+                    height: em(473);
+                    margin-left: auto;
+                    
+                }
+            }
+        }
+        .product-text-container{
+            width: 50%;
+            max-width: em(530);
+            .product-content {
+                max-width: em(507);
+                width: 100%;
+            }
+        }
+    }
+}
