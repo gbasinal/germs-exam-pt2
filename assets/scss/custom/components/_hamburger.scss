@@ -28,8 +28,8 @@
 	background-color: #000;
 }
 .hamburger-box {
-	width: 40px;
-	height: 24px;
+	width: em(40);
+	height: em(24);
 	display: inline-block;
 	position: relative;
 }
@@ -45,8 +45,8 @@
 	}
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-	width: 40px;
-	height: 4px;
+	width: em(40);
+	height: em(4);
 	background-color: #000;
 	border-radius: 4px;
 	position: absolute;

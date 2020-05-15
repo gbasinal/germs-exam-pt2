@@ -86,12 +86,17 @@ header {
                 top: 0;
                 right: 0;
             }
+            @media only screen and (max-width: 767px){
+                margin-right: em(15);
+                margin-top: em(15);
+            }
             .hamburger {
                 .hamburger-inner {
                     background-color: $white;
                     &:before, &:after {
                         background-color: $white;
                     }
+                    
                 }
             }
         }

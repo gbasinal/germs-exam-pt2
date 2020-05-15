@@ -513,8 +513,8 @@ a:active, a:hover {
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 2.2222222222em;
+  height: 1.3333333333em;
   display: inline-block;
   position: relative;
 }
@@ -532,8 +532,8 @@ a:active, a:hover {
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 4px;
+  width: 2.2222222222em;
+  height: 0.2222222222em;
   background-color: #000;
   border-radius: 4px;
   position: absolute;
@@ -701,6 +701,12 @@ header .nav-header-container .menu-btn-container {
     margin-top: 1.3888888889em;
     top: 0;
     right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .nav-header-container .menu-btn-container {
+    margin-right: 0.8333333333em;
+    margin-top: 0.8333333333em;
   }
 }
 header .nav-header-container .menu-btn-container .hamburger .hamburger-inner {
