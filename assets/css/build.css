@@ -633,6 +633,8 @@ header .nav-header-container .nav-header-wrapper {
     padding: 0.8333333333em;
     height: 100%;
     background-color: #004B9B;
+    display: none;
+    opacity: 0;
   }
 }
 header .nav-header-container .nav-header-wrapper ul {
@@ -688,19 +690,23 @@ header .nav-header-container .nav-header-wrapper ul li:last-child {
 header .nav-header-container .nav-header-wrapper ul li:last-child:after {
   display: none;
 }
-header .nav-header-container .nav-header-wrapper .menu-btn-container {
+header .nav-header-container .menu-btn-container {
   position: absolute;
   display: none;
 }
 @media only screen and (max-width: 991px) {
-  header .nav-header-container .nav-header-wrapper .menu-btn-container {
+  header .nav-header-container .menu-btn-container {
     display: block;
+    margin-right: 1.3888888889em;
+    margin-top: 1.3888888889em;
+    top: 0;
+    right: 0;
   }
 }
-header .nav-header-container .nav-header-wrapper .menu-btn-container .hamburger .hamburger-inner {
+header .nav-header-container .menu-btn-container .hamburger .hamburger-inner {
   background-color: #fff;
 }
-header .nav-header-container .nav-header-wrapper .menu-btn-container .hamburger .hamburger-inner:before, header .nav-header-container .nav-header-wrapper .menu-btn-container .hamburger .hamburger-inner:after {
+header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:before, header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:after {
   background-color: #fff;
 }
 

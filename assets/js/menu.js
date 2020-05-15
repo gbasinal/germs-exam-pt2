@@ -13,8 +13,23 @@
 
 
     Menu.prototype.burgerClick = function(){
+        var menuContainer = $(".nav-header-wrapper");
+        var tl = new TimelineMax();
+        var flag = false;
         $(".hamburger").on("click", function(){
             $(this).toggleClass("is-active");
+
+            if (!flag) {
+                tl.to(menuContainer, 0 , {display: "flex"})
+                .to(menuContainer, .3, {opacity: 1})
+                flag = true;
+            }else {
+                console.log(flag)
+                tl.to(menuContainer, .3, {opacity: 0})
+                  .to(menuContainer, 0 , {display: "none"})
+                flag = false;
+            }
+
         })
     };
 

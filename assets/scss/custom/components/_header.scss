@@ -20,6 +20,8 @@ header {
                 padding: em(15);
                 height: 100%;
                 background-color: $dblue;
+                display: none;
+                opacity: 0;
             }
             ul {
                 display: flex;
@@ -73,18 +75,22 @@ header {
                     }
                 }
             }
-            .menu-btn-container {
-                position: absolute;
-                display: none;
-                @media only screen and (max-width: 991px){
-                    display: block;
-                }
-                .hamburger {
-                    .hamburger-inner {
+        }
+        .menu-btn-container {
+            position: absolute;
+            display: none;
+            @media only screen and (max-width: 991px){
+                display: block;
+                margin-right: em(25);
+                margin-top: em(25);
+                top: 0;
+                right: 0;
+            }
+            .hamburger {
+                .hamburger-inner {
+                    background-color: $white;
+                    &:before, &:after {
                         background-color: $white;
-                        &:before, &:after {
-                            background-color: $white;
-                        }
                     }
                 }
             }
