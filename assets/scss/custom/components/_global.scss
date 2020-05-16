@@ -40,6 +40,10 @@ main {
     @media only screen and (max-width: 767px){
         padding: 0 em(15);
     }
+    &--lorem-momentum-container {
+        padding-top: em(180);
+        padding-bottom: em(180);
+    }
 }
 
 
