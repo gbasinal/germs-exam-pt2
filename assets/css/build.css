@@ -1432,6 +1432,16 @@ ul, ol {
   padding-top: 4.4444444444em;
   padding-bottom: 8.3333333333em;
 }
+@media only screen and (max-width: 991px) {
+  .section--redeem-container {
+    padding-top: 6.6666666667em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section--redeem-container {
+    padding-top: 10em;
+  }
+}
 
 .owl-carousel .owl-dots {
   text-align: center;
