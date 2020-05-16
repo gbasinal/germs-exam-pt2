@@ -8,9 +8,15 @@ header {
         top: 0;
         z-index: 999;
         @media only screen and (max-width: 991px){
-            width: 100%;
-            height: 100%;
             left: 0;
+            height: auto;
+        }
+        &.active {
+            @media only screen and (max-width: 991px){
+                width: 100%;
+                height: 100%;
+                left: 0;
+            }
         }
         .nav-header-wrapper {
             width: 100%;
