@@ -16,12 +16,14 @@
 
     Menu.prototype.burgerClick = function(){
         var menuContainer = $(".nav-header-wrapper");
+        var menuWrapper = $(".nav-header-container");
         var tl = new TimelineMax();
         var flag = false;
         $(".hamburger").on("click", function(){
             $(this).toggleClass("is-active");
             
             if (!flag) {
+                menuWrapper.addClass("active")
                 tl.to(menuContainer, 0 , {display: "flex"})
                 .to(menuContainer, .3, {opacity: 1})
                 $("body, html").css("overflow", "hidden")
@@ -29,6 +31,7 @@
                 
             }else {
                 console.log(flag)
+                menuWrapper.removeClass("active")
                 tl.to(menuContainer, .3, {opacity: 0})
                   .to(menuContainer, 0 , {display: "none"})
                   $("body, html").css("overflow", "auto")
