@@ -10,15 +10,29 @@
     .header-wrapper {
         .header-bg-wrapper {
             padding: em(5) 0 ;
-            &.blue{
+            position: relative;
+            .blue{
                 background-color: $blue;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
             }
-            &.red {
+            .red {
                 background-color: $red;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
             }
         }
         h2{
             padding-right: 0.200em;
+            z-index: 99;
         }
     }
 }

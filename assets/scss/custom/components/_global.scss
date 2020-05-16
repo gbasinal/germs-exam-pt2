@@ -31,6 +31,22 @@ ul, ol{
     .animated-image {
         opacity: 0;
     }
+    .animated-header {
+        width: 0;
+    }
+}
+.animation-collider {
+    height: 1px;
+    position: fixed;
+    top: 5em;
+}
+.animated-img {
+    opacity: 0;
+}
+
+.animated-text {
+    opacity: 0;
+    transform : translateY(15px)
 }
 
 main {

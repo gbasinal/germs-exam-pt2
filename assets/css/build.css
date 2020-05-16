@@ -1026,15 +1026,29 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
 }
 .section-header-container .header-wrapper .header-bg-wrapper {
   padding: 0.2777777778em 0;
+  position: relative;
 }
-.section-header-container .header-wrapper .header-bg-wrapper.blue {
+.section-header-container .header-wrapper .header-bg-wrapper .blue {
   background-color: #009CDE;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
-.section-header-container .header-wrapper .header-bg-wrapper.red {
+.section-header-container .header-wrapper .header-bg-wrapper .red {
   background-color: #E30427;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 .section-header-container .header-wrapper h2 {
   padding-right: 0.2em;
+  z-index: 99;
 }
 
 .section--lorem-momentum-container .lorem-momentum-wrapper {
@@ -1402,6 +1416,24 @@ ul, ol {
 }
 .animated .animated-image {
   opacity: 0;
+}
+.animated .animated-header {
+  width: 0;
+}
+
+.animation-collider {
+  height: 1px;
+  position: fixed;
+  top: 5em;
+}
+
+.animated-img {
+  opacity: 0;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(15px);
 }
 
 main {
