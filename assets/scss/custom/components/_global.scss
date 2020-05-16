@@ -36,7 +36,31 @@ main {
 
 .section {
     padding: 0 em(25);
+    position: relative;
     @media only screen and (max-width: 767px){
         padding: 0 em(15);
+    }
+}
+
+
+
+
+
+// Settings style for carousels
+
+
+.owl-carousel {
+    .owl-dots {
+        text-align: center;
+        button {
+            outline: none;
+            width: em(13);
+            height: em(13);
+            border-radius: 50%;
+            background-color: $white;
+            &.active {
+                background-color: $blue;
+            }
+        }
     }
 }

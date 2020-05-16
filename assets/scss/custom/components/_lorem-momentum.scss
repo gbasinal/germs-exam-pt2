@@ -1,0 +1,29 @@
+.section--lorem-momentum-container {
+    .lorem-momentum-wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .product-momentum-container {
+            .product-momentum-wrapper {
+                .product-image-wrapper {
+                    .item {
+                        @include bgSettings(cover, no-repeat, center);
+                        width: em(483);
+                        height: em(483);
+                        margin: 0 auto em(20);
+                    }
+                    .owl-dots {
+                        button {
+                            margin-right: em(11);
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

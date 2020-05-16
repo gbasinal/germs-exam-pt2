@@ -651,6 +651,7 @@ a:active, a:hover {
 .owl-carousel .owl-dot {
   cursor: pointer;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -684,6 +685,7 @@ a:active, a:hover {
 .owl-carousel.owl-drag .owl-item {
   touch-action: pan-y;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1000,6 +1002,45 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   margin-bottom: 0.8333333333em;
 }
 
+.section-header-container {
+  width: 25em;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section-header-container .header-wrapper .header-bg-wrapper {
+  padding: 0.2777777778em 0;
+}
+.section-header-container .header-wrapper .header-bg-wrapper.blue {
+  background-color: #009CDE;
+}
+.section-header-container .header-wrapper h2 {
+  padding-right: 0.2em;
+}
+
+.section--lorem-momentum-container .lorem-momentum-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26.8333333333em;
+  height: 26.8333333333em;
+  margin: 0 auto 1.1111111111em;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .owl-dots button {
+  margin-right: 0.6111111111em;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .owl-dots button:last-child {
+  margin-right: 0;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1034,10 +1075,25 @@ ul, ol {
 
 .section {
   padding: 0 1.3888888889em;
+  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .section {
     padding: 0 0.8333333333em;
   }
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+.owl-carousel .owl-dots button {
+  outline: none;
+  width: 0.7222222222em;
+  height: 0.7222222222em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.owl-carousel .owl-dots button.active {
+  background-color: #009CDE;
 }
 /*# sourceMappingURL=build.css.map */
