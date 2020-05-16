@@ -1,0 +1,29 @@
+.section--the-artist-container {
+    .the-artist-wrapper {
+        .section-header-container {
+
+        }
+        .two-col-container {
+            .two-col-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                .content-wrapper {
+                    width: 50%;
+                    max-width: em(564);
+                    margin-right: em(18);
+                }
+                .two-col-image-wrapper {
+                    max-width: em(398);
+                    width: 50%;
+                    .imgStyle {
+                        @include bgSettings(cover, no-repeat , center);
+                        width: em(398);
+                        height: em(314);
+                    }
+                }
+            }
+        }
+    }
+}
