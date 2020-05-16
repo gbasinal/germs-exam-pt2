@@ -1,0 +1,117 @@
+.section--lorem-momentum-container {
+    .lorem-momentum-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .product-momentum-container {
+            
+            padding-bottom: em(65);
+            .product-momentum-wrapper {
+                .product-image-wrapper {
+                    .item {
+                        @include bgSettings(cover, no-repeat, center);
+                        width: em(483);
+                        height: em(483);
+                        margin: 0 auto em(20);
+                        position: relative;
+                        @media only screen and (max-width: 767px){
+                            width: em(300);
+                            height: em(300);
+                        }
+                        .spiketop-wrapper {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            @media only screen and (max-width: 767px){
+                                font-size: 10px;
+                            }
+                            .spiketopb {
+                                width: em(124);
+                            }
+                            .spiketops {
+                                transform: translate(em(46), em(-20));
+                                width: em(46);
+
+                            }
+                        }
+                        .spikebot-wrapper {
+                            position: absolute;
+                            bottom: em(12);
+                            left: em(-30);
+                            display: flex;
+                            @media only screen and (max-width: 767px){
+                                font-size: 10px;
+                            }
+                            .spikebotb {
+                                width: em(131);
+                            }
+                            .spikebots {
+                                transform: translate(em(-36), em(20));
+                                width: em(58);
+                            }
+                        }
+                    }
+                    .owl-dots {
+                        button {
+                            margin-right: em(11);
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-three-col-container {
+            .product-three-col-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                @media only screen and (max-width: 767px){
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .product-item-wrapper {
+                    width: em(310);
+                    margin-right: em(50);
+                    text-align: center;
+                    @media only screen and (max-width: 767px){
+                        width: 100%;
+                        margin: 0 auto em(50);
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .product-icon-wrapper {
+                        margin-bottom: em(28.5);
+                        height: em(120);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media only screen and (max-width: 767px){
+                            height: 100%;
+                        }
+                        img{
+                            @media only screen and (max-width: 767px){
+                                width: em(130);
+                                height: em(130);
+                            }
+                        }
+                    }
+                    .product-content-wrapper {
+                        h3 {
+                            margin-bottom: 0.417em;
+                        }
+                        p{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

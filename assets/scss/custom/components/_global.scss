@@ -36,7 +36,42 @@ main {
 
 .section {
     padding: 0 em(25);
+    position: relative;
     @media only screen and (max-width: 767px){
         padding: 0 em(15);
+    }
+    &--home-container {
+        padding-top: em(60);
+        padding-bottom: em(60);
+    }
+    &--lorem-momentum-container {
+        padding-top: em(180);
+        padding-bottom: em(180);
+        @media only screen and (max-width: 767px){
+            padding-bottom: em(130);
+        }
+    }
+}
+
+
+
+
+
+// Settings style for carousels
+
+
+.owl-carousel {
+    .owl-dots {
+        text-align: center;
+        button {
+            outline: none;
+            width: em(13);
+            height: em(13);
+            border-radius: 50%;
+            background-color: $white;
+            &.active {
+                background-color: $blue;
+            }
+        }
     }
 }

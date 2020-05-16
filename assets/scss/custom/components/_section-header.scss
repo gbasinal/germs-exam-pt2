@@ -1,0 +1,21 @@
+.section-header-container {
+    width: em(450);
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media only screen and (max-width: 767px){
+        width: 100%;
+    }
+    .header-wrapper {
+        .header-bg-wrapper {
+            padding: em(5) 0 ;
+            &.blue{
+                background-color: $blue;
+            }
+        }
+        h2{
+            padding-right: 0.200em;
+        }
+    }
+}
