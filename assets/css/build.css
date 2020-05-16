@@ -1332,6 +1332,34 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   }
 }
 
+.section--redeem-container .redeem-wrapper .redeem-items-container {
+  text-align: center;
+  width: 100%;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper .redeem-item {
+  max-width: 24.4444444444em;
+  width: 100%;
+  margin-bottom: 2.2222222222em;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper .redeem-item:last-child {
+  margin-bottom: 0;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper .redeem-item:nth-child(3) {
+  margin-bottom: 5em;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper .redeem-item .item-icon-wrapper {
+  margin-bottom: 1.1111111111em;
+}
+.section--redeem-container .redeem-wrapper .redeem-items-container .redeem-items-wrapper .redeem-item .item-content-wrapper a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1398,6 +1426,21 @@ ul, ol {
 .section--lorem-inspiration-container {
   padding-top: 1.1111111111em;
   padding-bottom: 2.2222222222em;
+  margin-bottom: 5em;
+}
+.section--redeem-container {
+  padding-top: 4.4444444444em;
+  padding-bottom: 8.3333333333em;
+}
+@media only screen and (max-width: 991px) {
+  .section--redeem-container {
+    padding-top: 6.6666666667em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section--redeem-container {
+    padding-top: 10em;
+  }
 }
 
 .owl-carousel .owl-dots {

@@ -1,0 +1,36 @@
+.section--redeem-container {
+    .redeem-wrapper{
+        .redeem-items-container {
+            text-align: center;
+            width: 100%;
+            .redeem-items-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .redeem-item {
+                    max-width: em(440);
+                    width: 100%;
+                    margin-bottom: em(40);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(3){
+                        margin-bottom: em(90);
+                    }
+                    .item-icon-wrapper {
+                        margin-bottom: em(20);
+                        img {
+
+                        }
+                    }
+                    .item-content-wrapper {
+                        a {
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
