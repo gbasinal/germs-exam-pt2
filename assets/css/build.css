@@ -1147,11 +1147,13 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   align-items: center;
   height: 100%;
   margin-bottom: 0.8333333333em;
+  padding-left: 5em;
 }
 @media only screen and (max-width: 991px) {
   .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper {
     flex-direction: column-reverse;
     text-align: center;
+    padding-left: 0;
   }
 }
 .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .content-wrapper {
@@ -1176,6 +1178,11 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
     margin-bottom: 1.3888888889em;
   }
 }
+@media only screen and (max-width: 320px) {
+  .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper {
+    font-size: 15px;
+  }
+}
 .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper .imgStyle {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1185,10 +1192,59 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
 }
 @media only screen and (max-width: 767px) {
   .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper .imgStyle {
-    width: 16.1111111111em;
-    height: 12.7777777778em;
+    width: 19.1666666667em;
+    height: 15em;
     margin: 0 auto;
   }
+}
+.section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper {
+  max-width: 59.4444444444em;
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  .section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper {
+    max-width: 100%;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper {
+    font-size: 15px;
+  }
+}
+.section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19.4444444444em;
+  height: 13.3333333333em;
+}
+@media only screen and (max-width: 767px) {
+  .section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper .item {
+    width: 19.1666666667em;
+    height: 13em;
+    margin: 0 auto;
+  }
+}
+.section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper .owl-dots {
+  margin-top: 1.6666666667em;
+}
+.section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper .owl-dots button {
+  margin-right: 0.6111111111em;
+}
+.section--the-artist-container .the-artist-wrapper .artist-carousel-container .artist-carousel-wrapper .owl-dots button.active {
+  background-color: #E30427;
 }
 
 * {
