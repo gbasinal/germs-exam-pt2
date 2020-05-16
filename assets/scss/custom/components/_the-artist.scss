@@ -9,14 +9,29 @@
                 justify-content: center;
                 align-items: center;
                 height: 100%;
+                margin-bottom: em(15);
+                @media only screen and (max-width: 991px){
+                    flex-direction: column-reverse;
+                    text-align: center;
+                }
                 .content-wrapper {
                     width: 50%;
                     max-width: em(564);
                     margin-right: em(18);
+                    @media only screen and (max-width: 991px){
+                        margin-right: 0;
+                        max-width: 100%;
+                        width: 100%;
+                    }                    
                 }
                 .two-col-image-wrapper {
                     max-width: em(398);
                     width: 50%;
+                    @media only screen and (max-width: 991px){
+                        font-size: 14px;
+                        width: 100%;
+                        margin-bottom: em(25);
+                    } 
                     .imgStyle {
                         @include bgSettings(cover, no-repeat , center);
                         width: em(398);

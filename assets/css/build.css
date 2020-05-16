@@ -1146,15 +1146,36 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-bottom: 0.8333333333em;
+}
+@media only screen and (max-width: 991px) {
+  .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .content-wrapper {
   width: 50%;
   max-width: 31.3333333333em;
   margin-right: 1em;
 }
+@media only screen and (max-width: 991px) {
+  .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .content-wrapper {
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper {
   max-width: 22.1111111111em;
   width: 50%;
+}
+@media only screen and (max-width: 991px) {
+  .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 1.3888888889em;
+  }
 }
 .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper .imgStyle {
   background-size: cover;
@@ -1221,6 +1242,11 @@ ul, ol {
 .section--the-artist-container {
   padding-top: 3.6111111111em;
   padding-bottom: 3.6111111111em;
+}
+@media only screen and (max-width: 991px) {
+  .section--the-artist-container {
+    padding-top: 8.8888888889em;
+  }
 }
 
 .owl-carousel .owl-dots {
