@@ -13,6 +13,10 @@
                         width: em(483);
                         height: em(483);
                         margin: 0 auto em(20);
+                        @media only screen and (max-width: 767px){
+                            width: em(300);
+                            height: em(300);
+                        }
                     }
                     .owl-dots {
                         button {

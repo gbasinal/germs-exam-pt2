@@ -1009,6 +1009,11 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   top: 0;
   left: 0;
 }
+@media only screen and (max-width: 767px) {
+  .section-header-container {
+    width: 100%;
+  }
+}
 .section-header-container .header-wrapper .header-bg-wrapper {
   padding: 0.2777777778em 0;
 }
@@ -1033,6 +1038,12 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   width: 26.8333333333em;
   height: 26.8333333333em;
   margin: 0 auto 1.1111111111em;
+}
+@media only screen and (max-width: 767px) {
+  .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item {
+    width: 16.6666666667em;
+    height: 16.6666666667em;
+  }
 }
 .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .owl-dots button {
   margin-right: 0.6111111111em;

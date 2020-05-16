@@ -4,6 +4,9 @@
     position: absolute;
     top: 0;
     left: 0;
+    @media only screen and (max-width: 767px){
+        width: 100%;
+    }
     .header-wrapper {
         .header-bg-wrapper {
             padding: em(5) 0 ;
