@@ -1,9 +1,122 @@
-body {}
-
-b, strong {
-    font-weight:bold;
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
-* {
-    outline: none !important;
+body {
+    font-size: 1.406vw;
+    background-color: #000;
+    margin: 0;
+    @media only screen and (max-width: 1024px){
+        font-size: 18px;
+    }
+}
+
+p , a , li {
+    font-size: em(18);
+    color: #fff;
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+}
+
+.animated {
+    .animated-child {
+        opacity: 0;
+        transform : translateY(15px)
+    }
+    .animated-image {
+        opacity: 0;
+    }
+    .animated-header {
+        width: 0;
+    }
+}
+.animation-collider {
+    height: 1px;
+    position: fixed;
+    top: 5em;
+}
+.animated-img {
+    opacity: 0;
+}
+
+.animated-text {
+    opacity: 0;
+    transform : translateY(15px)
+}
+
+main {
+    // padding-top: em(131);
+    position: relative;
+}
+.collide {
+    position: fixed;
+    bottom: 0;
+}
+.section {
+    padding: 0 em(25);
+    position: relative;
+    @media only screen and (max-width: 767px){
+        padding: 0 em(15);
+    }
+    &--home-container {
+        padding-top: em(60);
+        padding-bottom: em(60);
+    }
+    &--lorem-momentum-container {
+        padding-top: em(180);
+        padding-bottom: em(180);
+        @media only screen and (max-width: 767px){
+            padding-bottom: em(130);
+        }
+    }
+    &--the-artist-container {
+        padding-top: em(65);
+        padding-bottom: em(85);
+        @media only screen and (max-width: 991px){
+            padding-top: em(160);
+        }
+    }
+    &--lorem-inspiration-container {
+        padding-top: em(20);
+        padding-bottom: em(40);
+        margin-bottom: em(90);
+    }
+    &--redeem-container {
+        padding-top: em(80);
+        padding-bottom: em(150);
+        @media only screen and (max-width: 991px){
+            padding-top: em(120);
+        }
+        @media only screen and (max-width: 320px){
+            padding-top : em(180);
+        }
+    }
+}
+
+
+
+
+
+// Settings style for carousels
+
+
+.owl-carousel {
+    .owl-dots {
+        text-align: center;
+        button {
+            outline: none;
+            width: em(13);
+            height: em(13);
+            border-radius: 50%;
+            background-color: $white;
+            &.active {
+                background-color: $blue;
+            }
+        }
+    }
 }

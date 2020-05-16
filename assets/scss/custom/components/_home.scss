@@ -1,0 +1,67 @@
+.section--home-container {
+    .home-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        @media only screen and (max-width: 1024px){
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 991px){
+            font-size: 12px;
+        }
+        @media only screen and (max-width: 767px){
+            flex-direction: column;
+        }
+        .product-image-container{
+            width: 50%;
+            padding-right: em(40);
+            @media only screen and (max-width: 767px){
+                width: 100%;
+                padding-right: 0;
+                font-size: 10px;
+            }
+            .product-image-wrapper {
+                .product-bgStyle {
+                    @include bgSettings(cover, no-repeat, center);
+                    width: em(501);
+                    height: em(473);
+                    margin-left: auto;
+                    @media only screen and (max-width: 767px){
+                        margin: 0 auto;
+                        
+                    }
+                }
+            }
+        }
+        .product-text-container{
+            width: 50%;
+            max-width: em(530);
+            margin-bottom: em(75);
+            @media only screen and (max-width: 767px){
+                width: 100%;
+                font-size: 16px;
+                max-width: 100%;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            .product-header {
+                margin-bottom: em(70);
+                @media only screen and (max-width: 767px){
+                    font-size: 14px;
+                }
+            }
+            .product-content {
+                max-width: em(507);
+                width: 100%;
+                @media only screen and (max-width: 767px){
+                    max-width: 100%;
+                }
+                h3 {
+                    margin-bottom: em(15);
+                }
+            }
+        }
+    }
+}

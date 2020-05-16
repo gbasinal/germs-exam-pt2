@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Agenda';
+    src: url('../fonts/Agenda-Light.eot');
+    src: url('../fonts/Agenda-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Agenda-Light.woff2') format('woff2'),
+        url('../fonts/Agenda-Light.woff') format('woff'),
+        url('../fonts/Agenda-Light.ttf') format('truetype'),
+        url('../fonts/Agenda-Light.svg#Agenda-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('../fonts/Agenda-Bold.eot');
+    src: url('../fonts/Agenda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Agenda-Bold.woff2') format('woff2'),
+        url('../fonts/Agenda-Bold.woff') format('woff'),
+        url('../fonts/Agenda-Bold.ttf') format('truetype'),
+        url('../fonts/Agenda-Bold.svg#Agenda-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('../fonts/Agenda-MediumCondensed.eot');
+    src: url('../fonts/Agenda-MediumCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Agenda-MediumCondensed.woff2') format('woff2'),
+        url('../fonts/Agenda-MediumCondensed.woff') format('woff'),
+        url('../fonts/Agenda-MediumCondensed.ttf') format('truetype'),
+        url('../fonts/Agenda-MediumCondensed.svg#Agenda-MediumCondensed') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('../fonts/Agenda-Black.eot');
+    src: url('../fonts/Agenda-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Agenda-Black.woff2') format('woff2'),
+        url('../fonts/Agenda-Black.woff') format('woff'),
+        url('../fonts/Agenda-Black.ttf') format('truetype'),
+        url('../fonts/Agenda-Black.svg#Agenda-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialNarrow-BoldItalic.eot');
+    src: url('../fonts/ArialNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialNarrow-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ArialNarrow-BoldItalic.woff') format('woff'),
+        url('../fonts/ArialNarrow-BoldItalic.ttf') format('truetype'),
+        url('../fonts/ArialNarrow-BoldItalic.svg#ArialNarrow-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+//// Default Typography
+h1, h2, h3, a, p ,li {
+    margin: 0;
+}
+
+
+h1 {
+    @include textStyle($white, 50, 0, 50, 900);
+    font-family: "Agenda";
+}
+
+h2{
+    @include textStyle($white, 50, 0, 58, 900);
+    font-family: "Arial Narrow";
+    text-transform: uppercase;
+}
+
+h3 {
+    @include textStyle($white, 24, 0, 21, bold);
+    font-family: "Agenda";
+}
+
+p {
+    @include textStyle($white, 18, 0, 21, 300);
+    font-family: "Agenda";
+}
+
+a {
+    text-decoration: none;
+    @include textStyle($white, 18, 0, 21, 500);
+    font-family: "Agenda";
+    &:active, &:hover {
+        color: $purple;
+    }
+}

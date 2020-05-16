@@ -1,2 +1,111 @@
-header{}
+header {
 
+
+    .nav-header-container {
+        position: fixed;
+        right: 0;
+        height: em(131);
+        top: 0;
+        z-index: 999;
+        @media only screen and (max-width: 991px){
+            width: 100%;
+            height: 100%;
+            left: 0;
+        }
+        .nav-header-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: em(120);
+            padding-top: em(18);
+            @media only screen and (max-width: 991px){
+                padding: em(15);
+                height: 100%;
+                background-color: $dblue;
+                display: none;
+                opacity: 0;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                @media only screen and (max-width: 991px){
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: em(24);
+                }
+                li {
+                    position: relative;
+                    max-width: em(165);
+                    padding-left: em(14);
+                    padding-right: em(50);
+                    @media only screen and (max-width: 991px){
+                        padding: em(25) 0;
+                        max-width: 100%;
+                    }
+                    @media only screen and (max-width: 767px){
+                        padding: em(15) 0;
+                    }
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        background-color: #666666;
+                        width: 2px;
+                        right: 0;
+                        bottom: 0;
+                        top: 0;
+                        position: absolute;
+                        @media only screen and (max-width: 991px){
+                            display: none;
+                        }
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        &.active {
+                            color: $purple;
+                            @media only screen and (max-width: 991px){
+                                color: $black;
+                            }
+                        }
+                        &:last-child {
+
+                        }
+                    }
+                }
+            }
+        }
+        .menu-btn-container {
+            position: absolute;
+            display: none;
+            @media only screen and (max-width: 991px){
+                display: block;
+                margin-right: em(25);
+                margin-top: em(25);
+                top: 0;
+                right: 0;
+            }
+            @media only screen and (max-width: 767px){
+                margin-right: em(15);
+                margin-top: em(15);
+            }
+            .hamburger {
+                .hamburger-inner {
+                    background-color: $white;
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,53 @@
+// Functions for px to em conversion
+$browser-context: 18; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@function px($pixels, $context: $browser-context) {
+    @return #{$pixels/$context};
+}
+
+// Mixins for default styles 
+
+$base : 18;
+$base-height : 22.5;
+
+
+@mixin textStyle( $color , $size: $base, $lspace, $lheight: $base-height , $weight: normal ) {
+    color: $color;
+    font-size: em($size);
+    letter-spacing: #{$lspace/$base}em;
+    line-height:  $lheight/$size;
+    font-weight: $weight;
+}
+
+@mixin bgSettings($size , $repeat , $position ) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+
+/////////////////////////////////////////
+
 @import "components/colors";
 @import "components/button";
-@import "components/global";
+@import "components/fonts";
+@import "components/hamburger";
+@import "components/owlcarousel";
 @import "components/header";
 @import "components/footer";
-@import "components/owlcarousel";
+
+@import "components/home";
+@import "components/_section-header";
+@import "components/lorem-momentum";
+@import "components/the-artist";
+@import "components/lorem-inspiration";
+@import "components/redeem";
+
+@import "components/global";
+
+
+
 
