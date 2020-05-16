@@ -897,6 +897,9 @@ header .nav-header-container .nav-header-wrapper ul li:last-child {
 header .nav-header-container .nav-header-wrapper ul li:last-child:after {
   display: none;
 }
+header .nav-header-container .nav-header-wrapper ul li a.active {
+  color: #A24090;
+}
 header .nav-header-container .menu-btn-container {
   position: absolute;
   display: none;

@@ -6,6 +6,7 @@
 	Menu.prototype.init = function() {
         var _self = this;
         _self.burgerClick();
+        _self.menuItemClick();
     };
     
 
@@ -35,6 +36,20 @@
 
         })
     };
+
+    Menu.prototype.menuItemClick = function(){
+        var item = $(".nav-header-wrapper ul li a");
+
+        item.on("click", function(e){
+            var hash = e.target.hash;
+            var position = $(hash).offset().top;
+            e.preventDefault();
+            $('body,html').animate({ scrollTop: position}, 500);
+            item.removeClass("active");
+            $(this).addClass("active");
+
+        })
+    }
 
 
     app.ready(function () {

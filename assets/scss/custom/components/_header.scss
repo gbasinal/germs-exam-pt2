@@ -70,7 +70,9 @@ header {
                     }
 
                     a {
-
+                        &.active {
+                            color: $purple;
+                        }
                         &:last-child {
 
                         }
