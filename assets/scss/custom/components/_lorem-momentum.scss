@@ -15,9 +15,37 @@
                         width: em(483);
                         height: em(483);
                         margin: 0 auto em(20);
+                        position: relative;
                         @media only screen and (max-width: 767px){
                             width: em(300);
                             height: em(300);
+                        }
+                        .spiketop-wrapper {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            .spiketopb {
+                                width: em(124);
+                            }
+                            .spiketops {
+                                transform: translate(em(46), em(-20));
+                                width: em(46);
+
+                            }
+                        }
+                        .spikebot-wrapper {
+                            position: absolute;
+                            bottom: em(12);
+                            left: em(-30);
+                            display: flex;
+                            .spikebotb {
+                                width: em(131);
+                            }
+                            .spikebots {
+                                transform: translate(em(-36), em(20));
+                                width: em(58);
+                            }
                         }
                     }
                     .owl-dots {

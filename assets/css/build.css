@@ -1041,12 +1041,39 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   width: 26.8333333333em;
   height: 26.8333333333em;
   margin: 0 auto 1.1111111111em;
+  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item {
     width: 16.6666666667em;
     height: 16.6666666667em;
   }
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spiketop-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spiketop-wrapper .spiketopb {
+  width: 6.8888888889em;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spiketop-wrapper .spiketops {
+  transform: translate(2.5555555556em, -1.1111111111em);
+  width: 2.5555555556em;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spikebot-wrapper {
+  position: absolute;
+  bottom: 0.6666666667em;
+  left: -1.6666666667em;
+  display: flex;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spikebot-wrapper .spikebotb {
+  width: 7.2777777778em;
+}
+.section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spikebot-wrapper .spikebots {
+  transform: translate(-2em, 1.1111111111em);
+  width: 3.2222222222em;
 }
 .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .owl-dots button {
   margin-right: 0.6111111111em;
@@ -1141,6 +1168,10 @@ ul, ol {
   .section {
     padding: 0 0.8333333333em;
   }
+}
+.section--home-container {
+  padding-top: 3.3333333333em;
+  padding-bottom: 3.3333333333em;
 }
 .section--lorem-momentum-container {
   padding-top: 10em;
