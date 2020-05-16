@@ -1,0 +1,93 @@
+.section--the-artist-container {
+    .the-artist-wrapper {
+        .section-header-container {
+
+        }
+        .two-col-container {
+            .two-col-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin-bottom: em(15);
+                padding-left: em(90);
+                @media only screen and (max-width: 991px){
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    padding-left: 0;
+                }
+                .content-wrapper {
+                    width: 50%;
+                    max-width: em(564);
+                    margin-right: em(18);
+                    @media only screen and (max-width: 991px){
+                        margin-right: 0;
+                        max-width: 100%;
+                        width: 100%;
+                    }                    
+                }
+                .two-col-image-wrapper {
+                    max-width: em(398);
+                    width: 50%;
+                    @media only screen and (max-width: 991px){
+                        width: 100%;
+                        margin-bottom: em(25);
+                    } 
+                    @media only screen and (max-width: 320px){
+                        font-size: 15px;
+                    }
+                    .imgStyle {
+                        @include bgSettings(cover, no-repeat , center);
+                        width: em(398);
+                        height: em(314);
+                        @media only screen and (max-width: 767px){
+                            width: em(345);
+                            height: em(270);
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .artist-carousel-container {
+            .artist-carousel-wrapper {
+                max-width: em(1070);
+                width: 100%;
+                margin: 0 auto;
+                @media only screen and (max-width: 1024px){
+                    font-size: 16px;
+                }
+                @media only screen and (max-width: 991px){
+                    font-size: 12px;
+                }
+                @media only screen and (max-width: 767px){
+                    max-width: 100%;
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: 320px){
+                    font-size: 15px;
+                }
+                .item {
+                    @include bgSettings(cover, no-repeat, center);
+                    width: em(350);
+                    height: em(240);
+                    @media only screen and (max-width: 767px){
+                        width: em(345);
+                        height: em(234);
+                        margin: 0 auto;
+                    }
+                }
+                .owl-dots {
+                    margin-top: em(30);
+                    button {
+                        margin-right: em(11);
+                        &.active {
+                            background-color: $red;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -51,6 +51,13 @@ main {
             padding-bottom: em(130);
         }
     }
+    &--the-artist-container {
+        padding-top: em(65);
+        padding-bottom: em(65);
+        @media only screen and (max-width: 991px){
+            padding-top: em(160);
+        }
+    }
 }
 
 
