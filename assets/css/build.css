@@ -819,6 +819,7 @@ header .nav-header-container {
   right: 0;
   height: 7.2777777778em;
   top: 0;
+  z-index: 999;
 }
 @media only screen and (max-width: 991px) {
   header .nav-header-container {
