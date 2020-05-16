@@ -28,7 +28,6 @@
                     max-width: em(398);
                     width: 50%;
                     @media only screen and (max-width: 991px){
-                        font-size: 14px;
                         width: 100%;
                         margin-bottom: em(25);
                     } 
@@ -36,6 +35,11 @@
                         @include bgSettings(cover, no-repeat , center);
                         width: em(398);
                         height: em(314);
+                        @media only screen and (max-width: 767px){
+                            width: em(290);
+                            height: em(230);
+                            margin: 0 auto;
+                        }
                     }
                 }
             }

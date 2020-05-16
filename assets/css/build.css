@@ -1172,7 +1172,6 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
 }
 @media only screen and (max-width: 991px) {
   .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper {
-    font-size: 14px;
     width: 100%;
     margin-bottom: 1.3888888889em;
   }
@@ -1183,6 +1182,13 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   background-position: center;
   width: 22.1111111111em;
   height: 17.4444444444em;
+}
+@media only screen and (max-width: 767px) {
+  .section--the-artist-container .the-artist-wrapper .two-col-container .two-col-wrapper .two-col-image-wrapper .imgStyle {
+    width: 16.1111111111em;
+    height: 12.7777777778em;
+    margin: 0 auto;
+  }
 }
 
 * {
