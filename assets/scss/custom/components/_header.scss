@@ -72,6 +72,9 @@ header {
                     a {
                         &.active {
                             color: $purple;
+                            @media only screen and (max-width: 991px){
+                                color: $black;
+                            }
                         }
                         &:last-child {
 
