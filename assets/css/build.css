@@ -897,6 +897,14 @@ header .nav-header-container .nav-header-wrapper ul li:last-child {
 header .nav-header-container .nav-header-wrapper ul li:last-child:after {
   display: none;
 }
+header .nav-header-container .nav-header-wrapper ul li a.active {
+  color: #A24090;
+}
+@media only screen and (max-width: 991px) {
+  header .nav-header-container .nav-header-wrapper ul li a.active {
+    color: #000;
+  }
+}
 header .nav-header-container .menu-btn-container {
   position: absolute;
   display: none;
@@ -1391,6 +1399,15 @@ ul, ol {
 .animated .animated-child {
   opacity: 0;
   transform: translateY(-15px);
+}
+
+main {
+  position: relative;
+}
+
+.collide {
+  position: fixed;
+  bottom: 0;
 }
 
 .section {

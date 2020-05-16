@@ -16,7 +16,7 @@
         // added delay to initialize carousel first
         setTimeout(function(){
             if($(".product-image-carousel .owl-dots").length > 0 ){
-                console.log("found")
+               
                 $(".product-image-carousel .owl-dots").removeClass("disabled")
             }
         },200)
@@ -32,7 +32,7 @@
         // added delay to initialize carousel first
         setTimeout(function(){
             if($(".product-image-carousel .owl-dots").length > 0 ){
-                console.log("found")
+               
                 $(".product-image-carousel .owl-dots").removeClass("disabled")
             }
         },200)

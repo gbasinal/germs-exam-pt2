@@ -32,8 +32,12 @@ ul, ol{
 
 main {
     // padding-top: em(131);
+    position: relative;
 }
-
+.collide {
+    position: fixed;
+    bottom: 0;
+}
 .section {
     padding: 0 em(25);
     position: relative;
