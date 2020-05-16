@@ -1055,6 +1055,11 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   top: 0;
   display: flex;
 }
+@media only screen and (max-width: 767px) {
+  .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spiketop-wrapper {
+    font-size: 10px;
+  }
+}
 .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spiketop-wrapper .spiketopb {
   width: 6.8888888889em;
 }
@@ -1067,6 +1072,11 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   bottom: 0.6666666667em;
   left: -1.6666666667em;
   display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spikebot-wrapper {
+    font-size: 10px;
+  }
 }
 .section--lorem-momentum-container .lorem-momentum-wrapper .product-momentum-container .product-momentum-wrapper .product-image-wrapper .item .spikebot-wrapper .spikebotb {
   width: 7.2777777778em;

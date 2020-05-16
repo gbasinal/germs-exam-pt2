@@ -25,6 +25,9 @@
                             right: 0;
                             top: 0;
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                font-size: 10px;
+                            }
                             .spiketopb {
                                 width: em(124);
                             }
@@ -39,6 +42,9 @@
                             bottom: em(12);
                             left: em(-30);
                             display: flex;
+                            @media only screen and (max-width: 767px){
+                                font-size: 10px;
+                            }
                             .spikebotb {
                                 width: em(131);
                             }
