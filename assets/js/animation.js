@@ -11,13 +11,20 @@
         $('.animated').one('inview', function(event, isInView) {
             var _this = $(this);
             var animatedChildren = _this.find('.animated-child');
+            var animatedImage = _this.find(".animated-image");
             if(isInView){
                 if(animatedChildren.length > 0) {
                     TweenMax.staggerTo(animatedChildren, 0.4, { y: 0, opacity: 1, delay: 0.1}, 0.2)
                 }
+                if(animatedImage.length > 0) {
+                    TweenMax.staggerTo(animatedImage, 0.4, { opacity: 1, delay: 0.1}, 0.2)
+                }
             }
         });
     }
+
+
+
 
     app.Animation = Animation;
 
