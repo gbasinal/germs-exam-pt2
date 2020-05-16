@@ -1,0 +1,61 @@
+.section--lorem-inspiration-container {
+    background-color: $dblue;
+    text-align: right;
+    @media only screen and (max-width: 1024px){
+        text-align: left;
+    }
+    .lorem-inspiration-wrapper {
+        width: 100%;
+        position: relative;
+        padding-left: em(90);
+        @media only screen and (max-width: 1024px){
+            padding-left: 0;
+        }
+        .header-wrapper {
+            max-width: em(350);
+            width: 100%;
+            margin-bottom: em(20);
+            @media only screen and (max-width: 1024px){
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 767px){
+                text-align: right;
+            }
+        }
+        .image-wrapper {
+            position: absolute;
+            top: 50%;
+            left: em(500);
+            transform: translateY(-50%);
+            @media only screen and (max-width: 1024px){
+                position: unset;
+                transform: none;
+                margin-bottom: em(20);
+            }
+            @media only screen and (max-width: 767px){
+                font-size: 9px;
+            }
+            @media only screen and (max-width: 320px){
+                font-size: 8px;
+            }
+            .imgbgStyle {
+                @include bgSettings(cover, no-repeat, center);
+                width: em(649);
+                height: em(404);
+                @media only screen and (max-width: 1024px){
+                    margin: 0 auto;
+                }
+            }
+        }
+        .content-wrapper {
+            max-width: em(350);
+            width: 100%;
+            @media only screen and (max-width: 1024px){
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 767px){
+                text-align: center;
+            }
+        }
+    }
+}

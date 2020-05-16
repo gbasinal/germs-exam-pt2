@@ -53,10 +53,16 @@ main {
     }
     &--the-artist-container {
         padding-top: em(65);
-        padding-bottom: em(65);
+        padding-bottom: em(85);
         @media only screen and (max-width: 991px){
             padding-top: em(160);
         }
+    }
+    &--lorem-inspiration-container {
+        padding-top: em(20);
+        padding-bottom: em(40);
+
+
     }
 }
 
