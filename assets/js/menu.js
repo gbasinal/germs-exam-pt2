@@ -91,26 +91,12 @@
             var home =$("#home");
             var momentum =$("#lorem-momentum");
             var artist =$("#the-artist");
-            var artist2 =$("#the-artist-2");
+            var dragon =$("#dragon");
             var redeem =$("#redeem");
             
             
             var collider = $(".collide");
-            var animCollider = $(".animation-collider");
-
-
-            // var animM = momentum.find(".animated-img");
-            // var animatedTxtM =  momentum.find(".animated-text");
-
-            // var animA = artist.find(".animated-img");
-            // var animatedTxtA =  artist.find(".animated-text");
-
-            // var animAA = artist2.find(".animated-img");
-            // var animatedTxtAA =  artist2.find(".animated-text");
-
-            // var animR = redeem.find(".animated-img");
-            // var animatedTxtR =  redeem.find(".animated-text");
-
+           
 
             // For menu active state when scrolling
             $(".nav-header-wrapper ul li a").removeClass("active")
@@ -128,7 +114,7 @@
                 $("[href='#the-artist']").addClass("active")
                 
             }
-            if(app.Menu.prototype.collider(artist2, collider)){
+            if(app.Menu.prototype.collider(dragon, collider)){
                 $("[href='#the-artist']").addClass("active")
                 
             }
@@ -136,21 +122,6 @@
                 $("[href='#redeem']").addClass("active")
                 
             }
-
-            // For animation detection
-
-            // if(app.Menu.prototype.collider(momentum, animCollider)){
-            //     app.Animation.prototype.sectionElementReveal(animM, animatedTxtM);
-            // }
-            // if(app.Menu.prototype.collider(artist, animCollider)){
-            //     app.Animation.prototype.sectionElementReveal(animA, animatedTxtA);
-            // }
-            // if(app.Menu.prototype.collider(artist2, animCollider)){
-            //     app.Animation.prototype.sectionElementReveal(animAA, animatedTxtAA);
-            // }
-            // if(app.Menu.prototype.collider(redeem, animCollider)){
-            //     app.Animation.prototype.sectionElementReveal(animR, animatedTxtR);
-            // }
         })
 
     }

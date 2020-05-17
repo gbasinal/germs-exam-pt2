@@ -40,14 +40,21 @@ ul, ol{
     position: fixed;
     top: 5em;
 }
+.animation-collider-redeem {
+    height: 1px;
+    position: fixed;
+    top: 40%;
+}
 .animated-img {
     opacity: 0;
 }
 
-.animated-text {
+.animated-text, .animated-textH {
     opacity: 0;
     transform : translateY(15px)
 }
+
+
 
 main {
     // padding-top: em(131);
@@ -66,12 +73,14 @@ main {
     &--home-container {
         padding-top: em(60);
         padding-bottom: em(60);
+
     }
     &--lorem-momentum-container {
         padding-top: em(180);
         padding-bottom: em(180);
         @media only screen and (max-width: 767px){
             padding-bottom: em(130);
+            padding-top: em(160);
         }
     }
     &--the-artist-container {
@@ -90,7 +99,7 @@ main {
         padding-top: em(80);
         padding-bottom: em(150);
         @media only screen and (max-width: 991px){
-            padding-top: em(120);
+            padding-top: em(160);
         }
         @media only screen and (max-width: 320px){
             padding-top : em(180);
