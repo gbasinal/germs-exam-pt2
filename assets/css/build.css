@@ -1042,6 +1042,7 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   left: 0;
   right: 0;
   z-index: -1;
+  width: 0;
 }
 .section-header-container .header-wrapper .header-bg-wrapper .red {
   background-color: #E30427;
@@ -1051,6 +1052,7 @@ header .nav-header-container .menu-btn-container .hamburger .hamburger-inner:bef
   left: 0;
   right: 0;
   z-index: -1;
+  width: 0;
 }
 .section-header-container .header-wrapper h2 {
   padding-right: 0.2em;
@@ -1433,11 +1435,17 @@ ul, ol {
   top: 5em;
 }
 
+.animation-collider-redeem {
+  height: 1px;
+  position: fixed;
+  top: 40%;
+}
+
 .animated-img {
   opacity: 0;
 }
 
-.animated-text {
+.animated-text, .animated-textH {
   opacity: 0;
   transform: translateY(15px);
 }
@@ -1471,6 +1479,7 @@ main {
 @media only screen and (max-width: 767px) {
   .section--lorem-momentum-container {
     padding-bottom: 7.2222222222em;
+    padding-top: 8.8888888889em;
   }
 }
 .section--the-artist-container {
@@ -1493,7 +1502,7 @@ main {
 }
 @media only screen and (max-width: 991px) {
   .section--redeem-container {
-    padding-top: 6.6666666667em;
+    padding-top: 8.8888888889em;
   }
 }
 @media only screen and (max-width: 320px) {
