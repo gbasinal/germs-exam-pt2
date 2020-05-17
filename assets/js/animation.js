@@ -32,6 +32,8 @@
 
     Animation.prototype.sectionElementReveal = function(anim, animatedTxt){
 
+
+        // Triggers for animation
         var animCollider = $(".animation-collider");
         var animColliderRedeem = $(".animation-collider-redeem");
         var momentum = $("#lorem-momentum");
@@ -41,6 +43,7 @@
         var redeem = $("#redeem .section-header-container")
 
 
+        // Targeted Elements
         var animM = momentum.find(".animated-img");
         var animatedTxtM =  momentum.find(".animated-text");
 
@@ -58,6 +61,8 @@
         var animR = $("#redeem  .animated-img");
         var animatedTxtR =  $("#redeem  .animated-text");
 
+
+        // Animation bound to scroll event, could be optimized
         $(window).on("scroll", function(){
             if(app.Menu.prototype.collider(momentum, animCollider)){
             
@@ -86,14 +91,11 @@
             
             if(app.Menu.prototype.collider(dragon, animCollider)){
                 TweenMax.staggerTo(animatedTxtD, 0.4, { y: 0, opacity: 1, delay: 0.1}, 0.2)
-                TweenMax.staggerTo(animD, 0.8, { opacity: 1, delay: 0.5}, 0.2)
-                setTimeout(function(){
-                    
-                },1500)
+                TweenMax.staggerTo(animD, 0.8, { opacity: 1, delay: 0.5}, 0.2);
             }
 
             if(app.Menu.prototype.collider(redeem, animColliderRedeem)){
-                console.log("asda")
+              
                 TweenMax.staggerTo(animR, 0.8, { opacity: 1, delay: 0.5}, 0.2)
                 
                 setTimeout(function(){
