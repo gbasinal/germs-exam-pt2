@@ -9,7 +9,7 @@
 	};
 
     Animation.prototype.inView = function() {
-        $('.animated').one('inview', function(event, isInView, ) {
+        $('.animated').one('inview', function(event, isInView ) {
             var _this = $(this);
             var animatedChildren = _this.find('.animated-child');
             var animatedImage = _this.find(".animated-image");
@@ -30,7 +30,7 @@
 
     }
 
-    Animation.prototype.sectionElementReveal = function(anim, animatedTxt){
+    Animation.prototype.sectionElementReveal = function(){
 
 
         // Triggers for animation
